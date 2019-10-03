@@ -98,7 +98,7 @@ app.get('*', (req, res) => {
     })
 });
 
-app.listen(3000, '127.0.0.1', () => {
+app.listen(3000, '173.209.36.229', () => {
     console.log(__basedir);
     console.log('Server is up on port 3000. ---- 127.0.0.1')
 });
