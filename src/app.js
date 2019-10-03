@@ -5,8 +5,6 @@ const geocode = require('./utils/geocode');
 const forecast = require('./utils/forecast');
 global.__basedir = __dirname;
 
-console.log(__basedir);
-
 const app = express();
 const port = process.env.PORT || 3000;
 
@@ -101,5 +99,6 @@ app.get('*', (req, res) => {
 });
 
 app.listen(3000, '127.0.0.1', () => {
+    console.log(__basedir);
     console.log('Server is up on port 3000. ---- 127.0.0.1')
 });
